@@ -9,59 +9,61 @@ void	rush04(int x, int y)
 	char C = 'C';
 	char RET = '\n';
 	char SPA = ' ';
-
-	while (ligne <= y)
-	{ 
-		while (collone <= x)
-		{	
-			//ecriture debut de ligne
-			
-			if (ligne == 1 && collone == 1)
-			{
-				ft_putchar(A);
-			}
-			else if (ligne == 1 && collone == x)
+	
+	if (x >= 0 && y >= 0)
+	{
+		while (ligne <= y)
+		{	 
+			while (collone <= x)
 			{	
-				ft_putchar(C);
-			}
-			else if (ligne == 1 && collone < x)
-			{
-				ft_putchar(B);
-			}
-
-			//ecriture ligne entre
-
-			else if (ligne < y && collone == 1)
-			{
-				ft_putchar(B);
-			}
-			else if (ligne < y && collone == x)
-			{
-				ft_putchar(B);
-			}
-			else if (ligne < y && (1 < collone < x))
-			{
-				ft_putchar(SPA);
-			}
+				//ecriture debut de ligne
 			
-			//ecriture fin de ligne
+				if (ligne == 1 && collone == 1)
+				{
+					ft_putchar(A);
+				}
+				else if (ligne == 1 && collone == x)
+				{	
+					ft_putchar(C);
+				}
+				else if (ligne == 1 && collone < x)
+				{
+					ft_putchar(B);
+				}
 
-			else if (ligne == y && collone == 1)
-            {
-                ft_putchar(C);
-            }
-            else if (ligne == y && collone == x)
-            {
-                ft_putchar(A);
+				//ecriture ligne entre
+
+				else if (ligne < y && collone == 1)
+				{
+					ft_putchar(B);
+				}
+				else if (ligne < y && collone == x)
+				{
+					ft_putchar(B);
+				}
+				else if (ligne < y && (1 < collone < x))
+				{
+					ft_putchar(SPA);
+				}
+			
+				//ecriture fin de ligne
+
+				else if (ligne == y && collone == 1)
+            	{
+                	ft_putchar(C);
+            	}
+            	else if (ligne == y && collone == x)
+            	{
+                	ft_putchar(A);
+				}
+				else if (ligne == y && collone < x)
+				{
+			   		ft_putchar(B);
+				}
+				collone++;
 			}
-			else if (ligne == y && collone < x)
-			{
-			   	ft_putchar(B);
-			}
-			collone++;
+			ft_putchar(RET);
+			collone = 1;
+			ligne++;
 		}
-		ft_putchar(RET);
-		collone = 1;
-		ligne++;
 	}
-}
