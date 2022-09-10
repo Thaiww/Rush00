@@ -1,6 +1,6 @@
-#include <unistd.h>
+void ft_putchar(char c);
 
-void	rush04(int x, int y)
+void	rush(int x, int y)
 {	
 	long ligne = 1;
 	long collone = 1;
@@ -10,7 +10,7 @@ void	rush04(int x, int y)
 	char RET = '\n';
 	char SPA = ' ';
 	
-	if (x >= 0 && y >= 0)
+	if (x > 0 && y > 0)
 	{
 		while (ligne <= y)
 		{	 
@@ -67,3 +67,4 @@ void	rush04(int x, int y)
 			ligne++;
 		}
 	}
+}
