@@ -49,7 +49,7 @@ void	rush(int x, int y)
 				//ecriture fin de ligne
 
 				else if (ligne == y && collone == 1)
-            	{
+				{
 					ft_putchar(C);
 				}
 				else if (ligne == y && collone == x)
