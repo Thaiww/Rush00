@@ -1,14 +1,26 @@
-void ft_putchar(char c);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush04.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tbaudoux,mgomes-d,dergen                   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/10 16:09:33 by tbaudoux          #+#    #+#             */
+/*   Updated: 2022/09/10 16:14:01 by tbaudoux         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_putchar(char c);
 
 void	rush(int x, int y)
 {	
-	long ligne = 1;
-	long collone = 1;
-	char A = 'A';
-	char B = 'B';
-	char C = 'C';
-	char RET = '\n';
-	char SPA = ' ';
+	long	ligne = 1;
+	long	collone = 1;
+	char	A = 'A';
+	char	B = 'B';
+	char	C = 'C';
+	char	RET = '\n';
+	char	SPA = ' ';
 	
 	if (x > 0 && y > 0)
 	{
