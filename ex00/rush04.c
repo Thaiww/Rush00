@@ -50,11 +50,11 @@ void	rush(int x, int y)
 
 				else if (ligne == y && collone == 1)
             	{
-                	ft_putchar(C);
-            	}
-            	else if (ligne == y && collone == x)
-            	{
-                	ft_putchar(A);
+					ft_putchar(C);
+				}
+				else if (ligne == y && collone == x)
+				{
+					ft_putchar(A);
 				}
 				else if (ligne == y && collone < x)
 				{
