@@ -18,55 +18,50 @@ void	rush04(int x, int y)
 			
 			if (ligne == 1 && collone == 1)
 			{
-				write(1, &A, 1);
+				ft_putchar(A);
 			}
 			else if (ligne == 1 && collone == x)
 			{	
-				write(1,  &C, 1);;
+				ft_putchar(C);
 			}
 			else if (ligne == 1 && collone < x)
 			{
-				write(1, &B, 1);
+				ft_putchar(B);
 			}
 
 			//ecriture ligne entre
 
 			else if (ligne < y && collone == 1)
 			{
-				write(1, &B, 1);
+				ft_putchar(B);
 			}
 			else if (ligne < y && collone == x)
 			{
-				write(1, &B, 1);
+				ft_putchar(B);
 			}
 			else if (ligne < y && (1 < collone < x))
 			{
-				write(1, &SPA, 1);
+				ft_putchar(SPA);
 			}
 			
 			//ecriture fin de ligne
 
 			else if (ligne == y && collone == 1)
             {
-                write(1, &C, 1);
+                ft_putchar(C);
             }
             else if (ligne == y && collone == x)
             {
-                write(1, &A, 1);
+                ft_putchar(A);
 			}
 			else if (ligne == y && collone < x)
 			{
-			   	write(1, &B, 1);
+			   	ft_putchar(B);
 			}
 			collone++;
 		}
-		write(1, &RET, 1);
+		ft_putchar(RET);
 		collone = 1;
 		ligne++;
 	}
-}
-
-int main()
-{
-	rush04(123,42);
 }
