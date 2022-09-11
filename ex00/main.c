@@ -6,7 +6,7 @@
 /*   By: tbaudoux,mgomes-d,dergen                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 16:15:01 by tbaudoux          #+#    #+#             */
-/*   Updated: 2022/09/11 16:35:14 by tbaudoux         ###   ########.fr       */
+/*   Updated: 2022/09/11 18:25:10 by tbaudoux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(5, 5);
+	rush(10, 5);
 	return (0);
 }
