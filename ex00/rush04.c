@@ -6,7 +6,7 @@
 /*   By: tbaudoux,mgomes-d,dergen                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 16:09:33 by tbaudoux          #+#    #+#             */
-/*   Updated: 2022/09/10 16:14:01 by tbaudoux         ###   ########.fr       */
+/*   Updated: 2022/09/11 16:40:03 by tbaudoux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,12 @@ void	rush(int x, int y)
 	char	RET = '\n';
 	char	SPA = ' ';
 	
-	if (x > 0 && y > 0)
+	if (x > 0)
 	{
 		while (ligne <= y)
 		{	 
 			while (collone <= x)
 			{	
-				//ecriture debut de ligne
-			
 				if (ligne == 1 && collone == 1)
 				{
 					ft_putchar(A);
@@ -42,9 +40,6 @@ void	rush(int x, int y)
 				{
 					ft_putchar(B);
 				}
-
-				//ecriture ligne entre
-
 				else if (ligne < y && collone == 1)
 				{
 					ft_putchar(B);
@@ -53,24 +48,21 @@ void	rush(int x, int y)
 				{
 					ft_putchar(B);
 				}
-				else if (ligne < y && (1 < collone < x))
+				else if (ligne < y && collone < x)
 				{
 					ft_putchar(SPA);
 				}
-			
-				//ecriture fin de ligne
-
-				else if (ligne == y && collone == 1)
+				else if (collone == 1)
 				{
 					ft_putchar(C);
 				}
-				else if (ligne == y && collone == x)
+				else if (collone == x)
 				{
 					ft_putchar(A);
 				}
-				else if (ligne == y && collone < x)
+				else
 				{
-			   		ft_putchar(B);
+		   			ft_putchar(B);
 				}
 				collone++;
 			}
