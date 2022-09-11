@@ -6,7 +6,7 @@
 /*   By: tbaudoux,mgomes-d,dergen                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 16:09:33 by tbaudoux          #+#    #+#             */
-/*   Updated: 2022/09/11 16:34:00 by tbaudoux         ###   ########.fr       */
+/*   Updated: 2022/09/11 16:44:17 by tbaudoux         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void    rush(int x, int y)
     char    RET = '\n';
     char    SPA = ' ';
 
-    if (x > 0 && y > 0)
+    if (x > 0)
     {
         while (ligne <= y)
         {
@@ -52,15 +52,15 @@ void    rush(int x, int y)
                 {
                     ft_putchar(SPA);
                 }
-                else if (ligne == y && collone == 1)
+                else if (collone == 1)
                 {
                     ft_putchar(C);
                 }
-                else if (ligne == y && collone == x)
+                else if (collone == x)
                 {
                     ft_putchar(A);
                 }
-                else if (ligne == y && collone < x)
+                else
                 {
                     ft_putchar(B);
                 }
